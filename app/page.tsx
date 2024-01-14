@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react"
 import { LastCard } from "./ui/lastCard"
 import { MainCard } from "./ui/mainCard"
 import {NavBar} from "./ui/navBar"
