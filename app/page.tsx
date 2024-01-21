@@ -35,7 +35,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <ControlCenter/>
+        <ControlCenter img='liked_songs.png' name='Him & I (with Halsey)' title='Him & I (with Halsey)'/>
         </div>
     </>
   )
