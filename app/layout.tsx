@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import localFont from 'next/font/local'
+import { NavBar } from './ui/navBar'
+import { ControlCenter } from './ui/controlCenter'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,7 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='flex flex-col'>
+        <div className='flex mt-10 h-[85.8dvh]'>
+          <NavBar/>
+          {children}
+        </div>
+        <ControlCenter img='liked_songs.png' name='Him & I (with Halsey)' title='Him & I (with Halsey)'/>
+      </body>
     </html>
   )
 }
